@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Seu Nome" />
+  <meta name="description" content="Página simples sobre API e suas interações" />
+  <meta name="keywords" content="API, REST, SOAP, Web, Hardware, Testes de API, OAuth" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>API e Suas Interações</title>
+</head>
+<body>
+
+  <header class="header-1">
+    <nav class="nav">
+      <div>
+        <a href="#home" class="nav-Logo">API & Interações</a>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Início</a></li>
+          <li class="nav-item"><a href="#intro" class="nav-link">Introdução</a></li>
+          <li class="nav-item"><a href="#conceitos" class="nav-link">Conceitos</a></li>
+          <li class="nav-item"><a href="#tipos" class="nav-link">Tipos</a></li>
+          <li class="nav-item"><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+          <li class="nav-item"><a href="#exemplos" class="nav-link">Exemplos</a></li>
+          <li class="nav-item"><a href="#refs" class="nav-link">Referências</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="home">
+      <div class="home-data">
+        <h1 class="home-title">
+          APIs <span class="home-title-color">& Interações</span>
+        </h1>
+        <p>Conheça seu conceito, tipos e ferramentas.</p>
+        <a href="#intro" class="button">Começar</a>
+      </div>
+
+      <div class="home-img">
+        <img src="./images/api.png" alt="Ilustração de APIs como ponte entre aplicações e serviços" />
+      </div>
+    </section>
+
+    <section id="intro">
+      <h2 class="section-title">1. Introdução</h2>
+      <p>
+      <br>Para profissionais de TI, compreender o funcionamento de uma <abbr title="Application Programming Interface">API</abbr> é fundamental, tanto para utilizar soluções já existentes quanto para desenvolver as próprias, sejam elas de uso interno ou abertas ao público.
+As APIs são amplamente aplicadas para validar dados ou obter informações de sistemas já estruturados, evitando que o desenvolvedor precise criar algoritmos complexos do zero. Para isso, é essencial entender os conceitos e tipos que veremos a seguir.</br>
+</p>
+    </section>
+
+    <section id="conceitos">
+      <h2 class="section-title">2. Conceitos</h2>
+      <p><strong>API</strong> <em>(Application Programming Interface)</em> é um conjunto de definições e protocolos que permite a integração e a comunicação entre diferentes softwares.
+Em termos simples, funciona como uma “ponte” que possibilita a troca de dados e a execução de operações conjuntas entre sistemas.
+</p>
+      <p>Por exemplo, um aplicativo de viagens que precisa acessar informações de voos em tempo real não precisa construir toda a infraestrutura para se conectar diretamente às companhias aéreas. Em vez disso, pode usar uma API já existente, que fornece dados como horários, preços e disponibilidade, de forma padronizada e segura.</p>
+
+      <h3>APIs são indispensáveis em diversos contextos, como:</h3>
+      <ul>
+        <li>Integração de <b>e-commerce</b> com sistemas de pagamento;</li>
+        <li>Conexão de dispositivos <b>IoT</b> a aplicações em nuvem;</li>
+        <li>Automação de processos internos em empresas.</li>
+      </ul>
+    </section>
+
+    <section id="tipos">
+      <h2 class="section-title">2.1. Tipos de API</h2>
+
+      <h3>2.1.1. RESTful</h3>
+      <p>As APIs RESTful (Representational State Transfer) são amplamente utilizadas por sua simplicidade e flexibilidade.
+Baseadas no protocolo HTTP, utilizam métodos padrão como GET, POST, PUT e DELETE, além de suportarem múltiplos formatos de dados, como JSON e XML. São altamente escaláveis.
+</p>
+
+      <h3>2.1.2. Web</h3>
+      <p>As APIs Web permitem a interação entre sistemas por meio de protocolos como HTTP ou HTTPS.
+Podem seguir diferentes arquiteturas, como RESTful ou SOAP, e são comuns em aplicações que interagem diretamente com usuários via navegador.
+</p>
+
+      <h3>2.1.3. SOAP</h3>
+      <p>As APIs SOAP (Simple Object Access Protocol) utilizam XML para envio e recebimento de mensagens, seguindo padrões rigorosos de comunicação.
+São conhecidas por sua robustez e segurança, sendo indicadas para ambientes que exigem alta integridade de dados, como bancos e hospitais.
+</p>
+
+      <h3>2.1.4. Plataforma</h3>
+      <p>Essas APIs possibilitam o desenvolvimento de aplicações integradas a plataformas específicas, como Google Maps, Facebook ou Twitter, oferecendo acesso a funcionalidades internas e aumentando o alcance das soluções.</p>
+
+      <h3>2.1.5. Hardware</h3>
+      <p>Permitem a comunicação direta entre software e dispositivos físicos, sendo essenciais em automação industrial, IoT e equipamentos médicos, garantindo integração eficiente entre componentes físicos e sistemas digitais.</p>
+    </section>
+
+    <section id="ferramentas">
+      <h2 class="section-title">2.2. Ferramentas de teste</h2>
+      <p>Ferramentas de teste de API permitem validar funcionalidades, desempenho, segurança e confiabilidade. Algumas oferecem recursos avançados, como suporte a scripts, execução em múltiplos ambientes e integração com pipelines CI/CD.
+Tipos de teste mais comuns:
+</p>
+      <ol>
+        <li><strong>Funcional</strong> — verifica se a API retorna as respostas esperadas;</li>
+        <li><strong>Carga</strong> — simula alto tráfego para avaliar desempenho sob estresse;</li>
+        <li><strong>Segurança</strong> — identifica vulnerabilidades como SQL Injection ou XSS;</li>
+        <li><strong>Integração</strong> — confirma a compatibilidade entre sistemas integrados.</li>
+      </ol>
+    </section>
+
+    <section id="exemplos">
+      <h2 class="section-title">2.3. Exemplos práticos</h2>
+      <p>As APIs exercem um papel fundamental como verdadeira espinha dorsal invisível da tecnologia moderna. Elas permitem que dados e funcionalidades sejam compartilhados de forma fluida entre diferentes sistemas de software, viabilizando integrações que muitas vezes passam despercebidas pelo usuário final. Ao rolar o feed de uma rede social, consultar a previsão do tempo ou verificar sua localização em um mapa, é altamente provável que você esteja interagindo com APIs sem sequer perceber.</p>
+
+      <h3>Redes sociais</h3>
+      <p>As redes sociais funcionam como grandes espaços virtuais, onde indivíduos e empresas se conectam, comunicam e interagem com o mundo. No entanto, por trás dessa experiência dinâmica, existe uma complexa rede de APIs coordenando o fluxo de informações. É graças a elas que funcionalidades como autenticação, compartilhamento de conteúdo e login integrado acontecem de forma tão rápida e segura.</p>
+
+      <h3>Autenticação</h3>
+      <p>Ao acessar uma rede social, o processo de autenticação é intermediado por uma API, que transmite e verifica seus dados de forma segura. Isso garante a integridade e a proteção das suas interações online. Existem diferentes métodos para esse processo:</p>
+      <ul>
+        <li><strong>Chaves de API</strong>, utilizadas para identificar e autorizar aplicações;</li>
+        <li><strong>OAuth</strong>, que emite tokens de acesso após o consentimento do usuário, permitindo autenticação sem expor credenciais sensíveis;</li>
+        <li><strong>Autenticação básica</strong>, na qual se utilizam nome de usuário e senha (método menos seguro e menos utilizado em ambientes modernos).</li>
+      </ul>
+
+      <h3>Compartilhamento de conteúdo</h3>
+      <p>Quando você publica um status, envia uma foto ou compartilha um vídeo, o simples ato de clicar no botão “Compartilhar” aciona uma API que envia o conteúdo para os servidores da plataforma. Esse processo, realizado em segundos, garante que amigos e seguidores tenham acesso ao que você publicou. Esse é um exemplo claro de como as APIs atuam de forma discreta, permitindo a troca de informações e interações em redes sociais sem que o usuário perceba a complexidade por trás.</p>
+
+      <h3>Logins sociais</h3>
+      <p>A possibilidade de entrar em diferentes sites utilizando sua conta do Google ou do Facebook é outro exemplo do poder das APIs. Ao integrar APIs de redes sociais, sites e aplicativos oferecem uma autenticação mais rápida e prática para o usuário. Assim, com apenas alguns cliques, é possível acessar diversos serviços e conteúdos, eliminando a necessidade de criar e memorizar múltiplos cadastros.</p>
+    </section>
+
+     <section id="conclusão">
+      <h2 class="section-title">3. Conclusão</h2>
+      <p>As APIs têm papel central no ecossistema digital moderno, permitindo integrar serviços, otimizar processos e facilitar a comunicação entre sistemas.
+Seja no acesso a dados de redes sociais, na automação de tarefas internas ou na conexão de dispositivos inteligentes, elas garantem agilidade, segurança e padronização, funcionando como a engrenagem invisível que mantém a internet e sistemas corporativos integrados.
+</p>
+    </section>
+
+    <section id="refs">
+      <h2 class="section-title">Referências</h2>
+      <ul>
+        <li><a href="https://www.browserstack.com/guide/open-source-api-testing-tools" target="_blank" rel="noopener">BrowserStack — 15 ferramentas de teste de API</a> (ago/2025)</li>
+        <li><a href="https://www.sensedia.com.br/pillar/exemplos-de-aplicacao-de-apis-no-dia-a-dia-redes-sociais-previsao-do-tempo-geolocalizacao" target="_blank" rel="noopener">Sensedia — Exemplos de uso de APIs</a> (ago/2025)</li>
+        <li><a href="https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces" target="_blank" rel="noopener">Red Hat — O que é API</a> (ago/2025)</li>
+        <li><a href="https://www.totvs.com/blog/gestao-para-assinatura-de-documentos/tipos-de-api/" target="_blank" rel="noopener">TOTVS — Tipos de API</a> (ago/2025)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-title">&nbsp; Criado na aula</p>
+    <p>&ensp; Programação Web</p>
+    <p>&emsp; 09/2025</p>
+    <p><small>&copy; 2025 — Todos os direitos reservados.</small></p>
+  </footer>
+
+</body>
+</html>
