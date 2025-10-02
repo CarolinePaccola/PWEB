@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pedra • Papel • Tesoura</title>
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            background: #f6f7fb;
+        }
+
+        .game {
+            background: #fff;
+            padding: 28px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            width: min(520px, 92vw);
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(22px, 4vw, 28px);
+            text-align: center;
+        }
+
+        p.help {
+            margin: .25rem 0 1rem;
+            color: #555;
+            font-size: .95rem;
+            text-align: center;
+        }
+
+        .choices {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 14px 0 10px;
+        }
+
+        button.choice {
+            padding: 14px 10px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            background: #fafafa;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform .06s ease, background .2s;
+        }
+
+        button.choice:active {
+            transform: translateY(1px)
+        }
+
+        button.choice:hover {
+            background: #f0f2f7
+        }
+
+        .status {
+            margin-top: 14px;
+            padding: 14px;
+            border-radius: 12px;
+            background: #f8fafc;
+            border: 1px solid #e8eef6
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .result {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .score {
+            margin-top: 12px;
+            color: #334155;
+            text-align: center;
+        }
+
+        .muted {
+            color: #6b7280;
+            font-size: .95rem
+        }
+
+        .small {
+            font-size: .9rem
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .pill {
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: 1px solid #e5e7eb;
+            background: #fff;
+            cursor: pointer
+        }
+
+        .pill:hover {
+            background: #f6f7fb
+        }
+    </style>
+</head>
+
+<body>
+    <main class="game">
+        <h1>Pedra • Papel • Tesoura</h1>
+        <p class="help">Escolha uma opção:</p>
+
+        <div class="choices" role="group" aria-label="Suas escolhas">
+            <button class="choice" data-move="pedra" aria-label="Escolher pedra">🪨 Pedra</button>
+            <button class="choice" data-move="papel" aria-label="Escolher papel">📄 Papel</button>
+            <button class="choice" data-move="tesoura" aria-label="Escolher tesoura">✂️ Tesoura</button>
+        </div>
+
+        <section class="status" aria-live="polite">
+            <div class="row small muted">
+                <div>Você: <span id="userMove">—</span></div>
+                <div>Computador: <span id="cpuMove">—</span></div>
+            </div>
+            <div class="result" id="result">Faça sua jogada!</div>
+            <div class="score" id="score">Placar — Você 0 : 0 CPU</div>
+            <div class="actions">
+                <button class="pill" id="reset">Zerar placar</button>
+                <button class="pill" id="again">Jogar novamente</button>
+            </div>
+            <p class="muted small" style="margin-top:10px">
+                Regras: Empate • Pedra quebra tesoura • Tesoura corta papel • Papel cobre pedra.
+            </p>
+        </section>
+    </main>
+
+    <script src="Atividade7.js"></script>
+</body>
+
+</html>
